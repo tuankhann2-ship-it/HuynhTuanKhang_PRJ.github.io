@@ -1,0 +1,790 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Montserrat', sans-serif;
+}
+
+html,
+body{
+    overflow-x:hidden;
+}
+
+img{
+    width:100%;
+    display:block;
+    object-fit:cover;
+}
+
+
+.top-header{
+    height:42px;
+    background:#000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 30px;
+
+    color:#fff;
+    font-size:11px;
+}
+
+.social-icons,
+.top-text,
+.currency{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.social-icons i,
+.currency{
+    color:#999;
+}
+
+.navbar{
+    height:85px;
+    border-bottom:1px solid #eee;
+    position:relative;
+}
+
+.desktop-navbar{
+    width:100%;
+
+    display:flex;
+    align-items:center;
+}
+
+.left-menu{
+    display:flex;
+    gap:30px;
+}
+
+.left-menu .nav-link{
+    color:#111;
+    font-size:12px;
+    font-weight:700;
+}
+
+.navbar-brand{
+    position:absolute;
+
+    left:50%;
+    transform:translateX(-50%);
+
+    font-size:52px;
+    font-weight:800;
+
+    color:#111;
+}
+
+.right-menu{
+    margin-left:auto;
+
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.menu-box{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    font-size:12px;
+    font-weight:700;
+}
+
+.line{
+    width:1px;
+    height:15px;
+    background:#ddd;
+}
+
+.cart-count{
+    width:20px;
+    height:20px;
+
+    border-radius:50%;
+
+    background:#000;
+    color:#fff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:10px;
+}
+
+/* MOBILE NAV */
+
+.mobile-top{
+    width:100%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.menu-toggle{
+    border:none;
+    background:none;
+
+    font-size:28px;
+}
+
+.mobile-logo{
+    position:static;
+    transform:none;
+
+    font-size:32px;
+    font-weight:800;
+
+    text-decoration:none;
+    color:#111;
+}
+
+.mobile-cart{
+    font-size:24px;
+}
+
+
+.hero{
+    height:760px;
+
+    background:url('public/image/s-12-2_88fe0e5f-d292-47a5-b4e0-999af1eb9d6a_2048x.jpg');
+    background-size:cover;
+    background-position:center;
+
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+
+    background:rgba(0,0,0,0.25);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+
+    text-align:center;
+    color:#fff;
+}
+
+.hero-content p{
+    letter-spacing:4px;
+}
+
+.hero-content h1{
+    font-size:110px;
+    font-weight:800;
+
+    margin-top:20px;
+}
+
+.hero-btn{
+    margin-top:25px;
+
+    border:none;
+    background:#fff;
+
+    width:260px;
+    height:55px;
+
+    font-size:11px;
+    font-weight:700;
+}
+
+.hero-arrow{
+    position:absolute;
+    z-index:5;
+
+    width:60px;
+    height:60px;
+
+    border:none;
+
+    background:rgba(255,255,255,0.5);
+
+    font-size:28px;
+}
+
+.left-arrow{
+    left:20px;
+}
+
+.right-arrow{
+    right:20px;
+}
+
+.category{
+    background:#000;
+    padding:70px 0;
+}
+
+.category-box{
+    position:relative;
+    text-align:center;
+    color:#fff;
+}
+
+.category-box img{
+    aspect-ratio:1/1.2;
+    border-radius:10px;
+}
+
+.small-btn{
+    position:absolute;
+
+    left:50%;
+    bottom:85px;
+
+    transform:translateX(-50%);
+
+    width:170px;
+    height:50px;
+
+    border:none;
+    background:#fff;
+
+    font-size:10px;
+    font-weight:700;
+}
+
+.category-box h3{
+    margin-top:22px;
+
+    font-size:18px;
+    font-weight:800;
+}
+
+.category-box p{
+    margin-top:12px;
+
+    color:#ccc;
+
+    font-size:14px;
+    line-height:1.7;
+}
+
+.features{
+    background:#000;
+    color:#fff;
+
+    padding:90px 0;
+    text-align:center;
+}
+
+.features i{
+    font-size:42px;
+    color:#ccc;
+}
+
+.features h5{
+    margin-top:20px;
+
+    font-size:20px;
+    font-weight:700;
+}
+
+.features p{
+    margin-top:10px;
+    color:#ccc;
+}
+
+
+.products{
+    background:#f5f5f5;
+    padding:100px 0;
+}
+
+.product-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.product-title h2{
+    font-size:42px;
+    font-weight:800;
+}
+
+.product-menu{
+    margin-top:20px;
+
+    display:flex;
+    justify-content:center;
+    gap:30px;
+}
+
+.product-box{
+    text-align:center;
+}
+
+.product-box img{
+    aspect-ratio:1/1.3;
+    border-radius:10px;
+}
+
+.product-box h4{
+    margin-top:20px;
+}
+
+.stars{
+    margin-top:10px;
+}
+
+.product-box p{
+    margin-top:10px;
+    font-weight:700;
+}
+
+.big-banner{
+    height:650px;
+
+    background:url('public/image/img-12-4_1920x1920.jpg');
+    background-size:cover;
+    background-position:center;
+
+    position:relative;
+}
+
+.banner-overlay{
+    position:absolute;
+    inset:0;
+
+    background:rgba(0,0,0,0.2);
+}
+
+.banner-content{
+    position:absolute;
+
+    bottom:40px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    z-index:2;
+}
+
+.banner-content button{
+    width:300px;
+    height:55px;
+
+    border:none;
+    background:#fff;
+
+    font-size:12px;
+    font-weight:700;
+}
+
+.fashion-section{
+    background:#f3f2ef;
+    padding:80px 0;
+}
+
+.fashion-left img{
+    aspect-ratio:1/1.2;
+    border-radius:10px;
+}
+
+.fashion-right{
+    text-align:center;
+}
+
+.fashion-right img{
+    max-width:350px;
+    margin:auto;
+
+    aspect-ratio:1/1.3;
+
+    background:#fff;
+    padding:20px;
+
+    border-radius:10px;
+}
+
+.fashion-right h4{
+    margin-top:20px;
+}
+
+.fashion-right p{
+    margin-top:12px;
+    font-weight:700;
+}
+
+.fashion-right button{
+    margin-top:20px;
+
+    width:320px;
+    height:50px;
+
+    border:none;
+
+    background:#000;
+    color:#fff;
+
+    font-size:12px;
+    font-weight:700;
+}
+
+.dots{
+    margin-top:25px;
+
+    display:flex;
+    justify-content:center;
+    gap:10px;
+}
+
+.dots span{
+    width:10px;
+    height:10px;
+
+    border-radius:50%;
+
+    background:#ccc;
+}
+
+.dots .active{
+    background:#000;
+}
+
+
+.story-section{
+    background:#f3f2ef;
+
+    text-align:center;
+
+    padding:120px 20px;
+}
+
+.story-section span{
+    font-size:11px;
+    font-weight:700;
+
+    letter-spacing:2px;
+}
+
+.story-section h2{
+    max-width:900px;
+
+    margin:30px auto 0;
+
+    font-size:50px;
+    line-height:1.4;
+}
+
+.story-section p{
+    max-width:650px;
+
+    margin:30px auto 0;
+
+    color:#777;
+    line-height:1.8;
+}
+
+.brands{
+    background:#f3f2ef;
+
+    text-align:center;
+
+    padding:100px 0;
+}
+
+.brands span{
+    display:block;
+
+    margin-bottom:20px;
+
+    color:#777;
+    letter-spacing:3px;
+}
+
+.brands h3{
+    font-size:40px;
+    margin-bottom:70px;
+}
+
+.brand-box{
+    transition:.3s;
+}
+
+.brand-box:hover{
+    transform:translateY(-8px);
+}
+
+.brand-icon{
+    width:80px;
+    height:80px;
+
+    object-fit:contain;
+
+    margin:auto auto 20px;
+}
+
+.brand-box p{
+    font-size:11px;
+    color:#777;
+}
+
+.instagram{
+    background:#f5f5f5;
+    padding-top:90px;
+}
+
+.insta-title{
+    text-align:center;
+    padding:0 20px 60px;
+}
+
+.insta-title h2{
+    font-size:48px;
+    font-weight:800;
+}
+
+.insta-title p{
+    margin-top:10px;
+    color:#777;
+}
+
+.insta-title span{
+    display:block;
+    margin-top:25px;
+
+    color:#888;
+}
+
+.instagram-grid{
+    display:grid;
+    grid-template-columns:40% 60%;
+}
+
+.grid-right{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+}
+
+.grid-left img,
+.grid-item img{
+    aspect-ratio:1/1;
+}
+
+.footer{
+    background:#050505;
+    color:#fff;
+}
+
+.footer-top{
+    background:#fff;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 35px;
+}
+
+.footer-security,
+.footer-social,
+.footer-payment{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.footer-security img{
+    height:40px;
+}
+
+.footer-payment img{
+    height:25px;
+}
+
+.footer-social i{
+    font-size:20px;
+    color:#111;
+}
+
+.footer-content{
+    padding:80px 0 40px;
+}
+
+.footer h5{
+    margin-bottom:25px;
+    font-size:15px;
+}
+
+.footer ul{
+    list-style:none;
+    padding:0;
+}
+
+.footer ul li{
+    margin-bottom:15px;
+    color:#777;
+}
+
+.footer p{
+    color:#777;
+    line-height:1.8;
+}
+
+.newsletter-box{
+    margin-top:20px;
+
+    display:flex;
+}
+
+.newsletter-box input{
+    flex:1;
+    height:50px;
+
+    border:none;
+    outline:none;
+
+    padding-left:15px;
+}
+
+.newsletter-box button{
+    width:90px;
+
+    border:none;
+    background:#fff;
+
+    font-weight:700;
+}
+
+.footer-bottom{
+    margin-top:50px;
+
+    padding-top:30px;
+
+    border-top:1px solid rgba(255,255,255,0.08);
+
+    text-align:center;
+
+    color:#888;
+}
+
+@media(max-width:991px){
+
+    .top-header{
+        flex-direction:column;
+        height:auto;
+
+        padding:12px;
+        gap:10px;
+
+        text-align:center;
+    }
+
+    .desktop-navbar{
+        display:none !important;
+    }
+
+    .navbar{
+        height:auto;
+        padding:15px 0;
+    }
+
+    .hero{
+        height:75vh;
+        padding:20px;
+    }
+
+    .hero-content h1{
+        font-size:50px;
+    }
+
+    .hero-arrow{
+        display:none;
+    }
+
+    .category,
+    .features,
+    .products,
+    .fashion-section,
+    .brands{
+        padding:60px 0;
+    }
+
+    .product-title h2,
+    .brands h3,
+    .insta-title h2{
+        font-size:32px;
+    }
+
+    .story-section h2{
+        font-size:34px;
+    }
+
+    .instagram-grid{
+        grid-template-columns:1fr;
+    }
+
+    .grid-right{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .footer-top{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .footer-content{
+        text-align:center;
+    }
+
+    .newsletter-box{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .newsletter-box button{
+        width:100%;
+        height:50px;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .mobile-logo{
+        font-size:28px;
+    }
+
+    .hero-content h1{
+        font-size:36px;
+    }
+
+    .hero-btn,
+    .banner-content button,
+    .fashion-right button{
+        width:100%;
+        max-width:280px;
+    }
+
+    .story-section h2{
+        font-size:24px;
+    }
+
+    .product-title h2,
+    .brands h3,
+    .insta-title h2{
+        font-size:26px;
+    }
+
+    .grid-right{
+        gap:2px;
+    }
+
+}
